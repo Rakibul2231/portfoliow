@@ -1,0 +1,574 @@
+
+
+body {
+    color: #666;
+    font-family: Georgia, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 0;
+    width: 1140px;
+    margin: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.headerArea {
+    width: 100%;
+    clear: both;
+}
+
+#topHeaderArea {
+    background: #ba2e1f;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.innerTopHeader {
+    overflow: hidden;
+}
+
+.miniMenu {
+    width: 70%;
+    float: left;
+    padding-top: 5px;
+}
+
+.miniMenu ul {
+    text-align: left;
+}
+
+.miniMenu ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 14px;
+}
+
+.miniMenu ul li::after {
+    content: "";
+    background: #fff;
+    width: 1px;
+    height: 11px;
+    top: 5px;
+    right: -20px;
+    display: inline-block;
+    position: absolute;
+    margin-right: 10px;
+}
+
+.miniMenu ul li:last-child::after {
+    display: none
+}
+
+.miniMenu ul li a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+}
+
+
+.searchArea {
+  overflow: hidden;
+    width: 30%;
+    float: right;
+
+}
+
+.searchArea form {
+  overflow: hidden;
+    max-width: 216px;
+    background: #fff;
+    border-radius: 20px;
+    width: 75%;
+    float: right;
+    padding: 3px;
+
+
+    padding-right: 6px;
+}
+
+.searchArea form input {
+
+    width: 75%;
+    float: left;
+    color: #000;
+    border: none;
+
+    margin: 5px;
+}
+
+.searchArea button {
+    width: 25px;
+    height: 25px;
+    float: right;
+    border-radius: 50%;
+    border: none;
+    background: #ba2e1f;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+#mainHeaderArea {
+    width: 100%;
+    clear: both;
+}
+
+.innerHeader {
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.logoArea {
+    width: 240px;
+    float: left;
+}
+
+.socialLinkArea {
+    width: 100%;
+    max-width: 600px;
+    float: right;
+    padding: 25px;
+}
+
+.socialLinkArea ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.socialLinkArea ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.socialLinkArea ul li a {
+    display: block;
+}
+
+.socialLinkArea ul li a i {
+    background: #333;
+    width: 35px;
+    height: 25px;
+    padding-top: 8px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    color: #fff;
+}
+
+.socialLinkArea ul li a:hover i.fab.fa-pinterest-p {
+    background: #9a1020;
+}
+
+.socialLinkArea ul li a:hover i.fab.fa-linkedin-in {
+    background: #0073b1;
+}
+
+.socialLinkArea ul li a:hover i.fab.fa-twitter {
+    background: #00baf1;
+}
+
+.socialLinkArea ul li a:hover i.fab.fa-google-plus-g {
+    background: #e13d38;
+}
+
+.socialLinkArea ul li a:hover i.fas.fa-rss {
+    background: #efbc2f;
+}
+
+#mainMenu {
+    width: 100%;
+    clear:both;
+    overflow: hidden;
+
+}
+
+.innerMenu {
+    background: #333;
+    position: relative;
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+    min-height: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.innerMenu::after {
+    content: "";
+    background: #2b2b2b;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+#mainMenu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#mainMenu ul li {
+    display: inline-block;
+    margin: 0 8px;
+    position: relative;
+}
+
+#mainMenu ul li a {
+    color: #e9e8e3;
+    display: block;
+    font-size: 15px;
+}
+
+#mainMenu ul li a:hover {
+    color: #ba2e1f;
+}
+
+#mainMenu ul li:hover a {
+    color: #ba2e1f;
+}
+
+.innerMenu ul li a span {
+    margin-right: 2px
+}
+
+#mainMenu ul ul {
+    position: absolute;
+    background: #881b53;
+    width: 180px;
+    left: -999999px;
+    top: 19px;
+    padding: 5px;
+}
+
+#mainMenu ul li:hover ul {
+    left: 0;
+}
+
+#mainMenu ul li:hover ul ul {
+    left: -999999px;
+}
+
+#mainMenu ul li:hover ul li:hover ul {
+    left: 180px;
+}
+
+#mainMenu ul ul li {
+    margin: 0 -5px;
+    display: block;
+}
+
+#mainMenu ul ul li a:hover {
+    color: #e9e8e3;
+}
+
+#mainMenu ul li:hover ul li a {
+    color: #e9e8e3;
+}
+
+#mainMenu ul ul li:hover a {
+    background: #ba2e1f;
+}
+
+#mainMenu ul ul li:hover ul li a {
+    background: 0 0;
+}
+
+#mainMenu ul ul ul {
+    background: #881b53;
+    width: 180px;
+    left: 180px;
+    top: 0;
+}
+
+#mainMenu ul ul li ul li a:hover {
+    background: #ba2e1f;
+}
+
+#workArea {
+    background: #f2f2f2;
+    padding: 45px 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.eachChild {
+    width: 31.33%;
+    float: left;
+    margin: 1%;
+}
+
+.eachChild h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.eachChild p {
+    color: #878787;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.eachChild a {
+    color: #b92d1f;
+    font-size: 14px;
+    float: right;
+    font-weight: 400;
+    clear: both;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.eachChild a:hover {
+    color: #262626;
+}
+
+.aboutArea {
+    margin-left: 0;
+}
+
+.aboutArea img {
+    border: 1px solid #dfdfdf;
+    padding: 5px;
+    display: block;
+    margin-bottom: 10px;
+    width: 96%;
+}
+
+.childService {
+    width: 100%;
+    overflow: hidden;
+}
+
+.childService .serviceImg {
+    width: 25%;
+    float: left;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.childService .serviceInfo {
+    width: 72%;
+    float: right;
+    margin-bottom: 30px;
+    margin-left: 1px;
+}
+
+.childService .serviceInfo h3 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.childService .serviceInfo p {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+}
+
+.testimonialArea {
+    margin-right: 0;
+}
+
+.childTestimonial {
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.childTestimonial h3 {
+    background: url(img/cott.png);
+    background-repeat: no-repeat;
+    color: #989898;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 0 15px 65px;
+}
+
+.childTestimonial h3 span {
+    font-weight: 400;
+}
+
+#footerArea {
+    background: #fff;
+    padding: 45px 0;
+}
+
+.innerfooter {
+    overflow: hidden;
+}
+
+.childFooter {
+    width: 21%;
+    float: left;
+    padding: 1%;
+    margin: 1%;
+}
+
+.childFooter:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.childFooter h3 {
+    border-top: 1px solid #666;
+    color: #666;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding: 5px;
+}
+
+.childFooter h4 {
+    color: #666;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.childFooter h4 a {
+    color: #666;
+    float: none;
+}
+
+.childFooter h4 a:hover {
+    color: #b92d1f;
+}
+
+.childFooter h6 {
+    margin: 0 0 16px;
+    line-height: 1.5em;
+}
+
+.childFooter p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 0;
+}
+
+.childFooter p a {
+    color: #b92d1f;
+}
+
+.childBlock {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.childBlock a {
+    color: #b92d1f;
+    float: right;
+}
+
+.childBlock p {
+    line-height: 1.2em;
+}
+
+.childBlock span a {
+    font-size: 16px;
+}
+
+.childFooter ul {
+    margin: 0;
+    padding: 0;
+}
+
+.childFooter ul ul {
+    display: none;
+}
+
+.childFooter li {
+    padding: 5px;
+    border-bottom: 1px solid #d4d4d4;
+    display: block;
+}
+
+.childFooter span {
+    padding-right: 5px;
+}
+
+.childFooter li:last-child {
+    border: none;
+}
+
+.childFooter li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.childFooter li a:hover {
+    color: #b92d1f;
+}
+
+.childFooter input {
+    background: #f2f2f2;
+    padding: 7px;
+    border: 0 solid;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-family: Georgia, sans-serif;
+}
+
+.childFooter textarea {
+    background: #f2f2f2;
+    padding: 7px;
+    border: 0 solid;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 165px;
+    font-size: 16px;
+}
+
+.childFooter input[type=submit] {
+    width: 85px;
+    color: #b82c1f;
+}
+
+.leftCopyright {
+    display: inline-block;
+    float: left;
+}
+#copyrightArea{
+  background: #f2f2f2;
+
+
+
+}
+.rightCopyright {
+    display: inline-block;
+    float: right;
+    margin-right: 23px;
+}
+
+.innerCopyright {
+  overflow: hidden;
+    width: 100%;
+    padding: 25px 0;
+    font-size: 13px;
+    color: #919191;
+}

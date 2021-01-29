@@ -1,0 +1,78 @@
+/*Tablet Layout*/
+@media only screen and (min-width:200px) and (max-width:991px) {
+  body {
+    width: 768px;
+  }
+
+  .socialLinkArea {
+    max-width: 428px;
+    padding:  5px 0 0 0;
+  }
+
+  .innerMenu {
+    background: none;
+  }
+
+  .innerMenu::after {
+    display: none;
+  }
+
+  .innerMenu {
+    min-height: 0px;
+    padding: 0px;
+  }
+
+  .innerHeader {
+    padding: 12px 0 0 0;
+  }
+  .logoArea{width: 185px}
+}
+/*Mobile Layout*/
+
+@media only screen and (min-width:200px) and (max-width:414px) {
+  body {
+    width: 414px;
+  }
+.miniMenu{
+  width: 100%;
+  padding-top:0;
+  padding-bottom: 5px;
+}
+.miniMenu ul,.socialLinkArea ul{
+  text-align: center;
+}
+.socialLinkArea {
+  max-width: 428px;
+  padding:  5px 0 15px 0;
+}
+#topHeaderArea {
+	padding: 10px 0;
+}
+.searchArea,.logoArea {
+    width: 260px;
+    float: none;
+    margin: auto;
+    text-align: center;
+}
+.eachChild,.childFooter{
+	width: 96%;
+}
+.leftCopyright,.rightCopyright {
+	display: inline-block;
+	float: left;
+	width: 100%;
+  margin-left: 15px;
+}
+.innerCopyright{
+  padding: 20px 0;
+}
+#footerArea,#workArea{
+  padding: 30px 0;
+}
+
+
+
+
+
+
+}
